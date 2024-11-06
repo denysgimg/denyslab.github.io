@@ -3,31 +3,32 @@ body {
     background-color: #f5f5f5;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Центрування контейнера по горизонталі */
-    align-items: center; /* Центрування контейнера по вертикалі */
-    height: 100vh;
     color: #333;
+}
+
+header {
+    text-align: left;
+    padding: 20px;
 }
 
 .container {
     display: flex;
-    flex-direction: column; /* Розташування елементів по вертикалі */
-    align-items: flex-start; /* Вирівнювання елементів до початку по горизонталі */
+    justify-content: left;
     background-color: #0bf0a3;
-    padding: 15px 30px;
+    padding: 10px 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
 }
 
 .container ul {
     list-style-type: none;
+    display: flex;
     margin: 0;
     padding: 0;
 }
 
 .container li {
-    margin: 10px 0; /* Відступи між елементами для вертикального розташування */
+    margin: 0 20px;
 }
 
 .container a {
@@ -43,14 +44,21 @@ body {
     transform: scale(1.1);
 }
 
-@media (max-width: 768px) {
-    .container {
-        align-items: center; /* Центрування елементів для мобільного вигляду */
-    }
-    .container ul {
-        align-items: center;
-    }
-    .container li {
-        margin: 10px 0;
-    }
+.gallery {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #888;
 }
