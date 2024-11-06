@@ -13,8 +13,8 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
     background-color: #0bf0a3;
     padding: 15px 30px;
     border-radius: 10px;
