@@ -1,37 +1,49 @@
-/* Стиль для основного контейнера */
-.img-container {
-    display: inline-block;
-    width: 320px;
-    padding: 15px;
-    text-align: center;
-    margin-top: 20px;
-    background: #f0f0f0;
-}
-
-/* Оформлення списку */
-.img-container ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Стиль для зображень */
-.img-container img {
-    width: 300px;
-    display: inline-block;
-    border-radius: 35px;
-    text-align: center;
-}
-
-/* Стилі для вирівнювання */
+/* Загальні стилі для зображень */
 .img {
     width: 200px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
+/* Зображення обтікається текстом ліворуч */
 .img.left {
     float: left;
+    margin-right: 15px;
 }
 
+/* Зображення обтікається текстом праворуч */
 .img.right {
     float: right;
+    margin-left: 15px;
+}
+
+/* Очищення обтікання */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Список фотографій */
+.img-container {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.img-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.img-container li {
+    margin: 5px;
+}
+
+.img-container img {
+    width: 150px;
+    border-radius: 10px;
 }
